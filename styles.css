@@ -1,133 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-/* Definindo o estilo básico para a página */
-* {
+/* Estilo geral da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background: linear-gradient(to right, #f8c8d3, #f1a7c1); /* Tons de rosa */
-    color: #fff;
-    text-align: center;
-}
-
-/* Cabeçalho */
-header {
-    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #ff7f50; /* Cor laranja suave */
     padding: 20px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-}
-
-header h1 {
-    font-size: 2.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
-}
-
-/* Painel do Botão */
-#painel {
-    display: flex;
-    justify-content: center;
-    margin: 50px auto;
-}
-
-/* Painel Card */
-.painel-card {
-    background: rgba(255, 255, 255, 0.3); /* Fundo semitransparente */
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    width: 90%;
-    max-width: 800px;
     text-align: center;
-}
-
-.painel-card h2 {
-    font-size: 2rem;
-    color: #fff;
-    margin-bottom: 15px;
-}
-
-.painel-card p {
-    font-size: 1.1rem;
-    color: #fff;
-    margin-bottom: 25px;
-}
-
-/* Botões do Painel */
-.painel-botoes {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap; /* Para manter os botões alinhados em telas menores */
-}
-
-.painel-btn {
-    background: #ffeb3b;
-    color: #333;
-    padding: 12px 25px;
-    border-radius: 25px;
-    font-weight: bold;
+    color: white;
+  }
+  
+  /* Estilo do título */
+  h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  /* Menu de navegação */
+  nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
     text-decoration: none;
-    transition: 0.3s;
-    width: 200px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo das seções */
+  section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo do formulário */
+  form input, form textarea {
+    padding: 10px;
+    width: 100%;
+    margin: 5px 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #e7653c;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
     text-align: center;
-}
-
-.painel-btn:hover {
-    background: #ffcc00;
-    transform: scale(1.1);
-}
-
-/* Seções */
-.container {
-    margin: 50px auto;
-    width: 80%;
-}
-
-/* Rodapé */
-footer {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 15px;
-    border-top: 2px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    margin-top: 50px;
-}
-
-/* Consultas de mídia para telas menores */
-@media (max-width: 768px) {
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
     header h1 {
-        font-size: 2rem;
+      font-size: 2em;
     }
-    header p {
-        font-size: 1rem;
+  
+    nav {
+      text-align: center;
+      padding: 15px;
     }
-
-    nav ul {
-        flex-direction: column;
+  
+    section {
+      margin: 10px;
+      padding: 15px;
     }
-
-    .container {
-        width: 90%;
-    }
-
-    .card {
-        padding: 15px;
-    }
-
-    .btn {
-        width: 100%;
-        padding: 15px;
-        font-size: 1rem;
-    }
-
-    footer {
-        font-size: 0.9rem;
-    }
-}
+  }
+  

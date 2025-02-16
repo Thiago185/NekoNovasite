@@ -1,72 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NekoNova - Seu bot fofo!</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neko Nova</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>🐾 NekoNova 🐾</h1>
-        <p>O bot perfeito para sua comunidade!</p>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#comandos">Comandos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Bem-vindo ao Neko Nova!</h1>
+    <p>Aqui você encontra os melhores projetos e novidades sobre o mundo Neko!</p>
+  </header>
 
-    <section class="container" id="sobre">
-        <div class="card">
-            <h2>✨ O que é NekoNova?</h2>
-            <p>A NekoNova é um bot incrível para seu servidor! Miauuu! 🐱✨</p>
-        </div>
-    </section>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </nav>
 
-    <section class="container" id="comandos">
-        <div class="card">
-            <h2>📝 Comandos</h2>
-            <ul>
-                <li><strong>/miau</strong> - A NekoNova mia para você!</li>
-                <li><strong>/carinho</strong> - Receba um carinho especial!</li>
-                <li><strong>/adotar</strong> - Adote um gatinho fofo!</li>
-            </ul>
-        </div>
-    </section>
+  <section id="sobre">
+    <h2>Sobre</h2>
+    <p>O Neko Nova é uma plataforma onde os amantes do mundo Neko podem se reunir, compartilhar projetos e ideias. Seja bem-vindo à nossa comunidade!</p>
+  </section>
 
-    <section class="container">
-        <div class="card buttons">
-            <a href="https://discord.com/oauth2/authorize?client_id=1338297467627765803&permissions=8&scope=bot" class="btn">💖 Adicionar ao Discord</a>
-            <a href="#" class="btn">📜 Suporte</a>
-            <a href="#" class="btn">🌐 Site Oficial</a>
-        </div>
-    </section>
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <p>Confira os projetos mais recentes desenvolvidos por nossa equipe!</p>
+    <!-- Aqui você pode adicionar seus projetos em forma de lista ou links -->
+    <ul>
+      <li><a href="#">Projeto 1</a></li>
+      <li><a href="#">Projeto 2</a></li>
+      <li><a href="#">Projeto 3</a></li>
+    </ul>
+  </section>
 
-    <section class="container" id="contato">
-        <div class="card">
-            <h2>📞 Contato</h2>
-            <p>Entre em contato através do nosso <a href="#">Discord</a>!</p>
-        </div>
-    </section>
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Se você tem alguma dúvida ou sugestão, entre em contato conosco!</p>
+    <form action="seu_script_de_envio.php" method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required><br><br>
 
-    <section class="container" id="painel">
-        <div class="card painel-card">
-            <h2>✨ Bem-vindo ao NekoNova!</h2>
-            <p>Este painel te permite acessar todas as funcionalidades e informações do bot. Escolha o que deseja fazer:</p>
-            <div class="painel-botoes">
-                <a href="#comandos" class="btn painel-btn">Ver Comandos</a>
-                <a href="#suporte" class="btn painel-btn">Suporte</a>
-                <a href="https://discord.com/oauth2/authorize?client_id=1338297467627765803&permissions=8&scope=bot" class="btn painel-btn">Adicionar ao Discord</a>
-            </div>
-        </div>
-    </section>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
 
-    <footer>
-        <p>© 2025 NekoNova. Criado com 💕 por NekoNova Team.</p>
-    </footer>
+      <label for="mensagem">Mensagem:</label><br>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Neko Nova. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
