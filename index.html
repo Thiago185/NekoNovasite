@@ -1,58 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neko Nova</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NekoNova | Painel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Bem-vindo ao Neko Nova!</h1>
-    <p>Aqui você encontra os melhores projetos e novidades sobre o mundo Neko!</p>
-  </header>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Bem-vindo ao Painel do NekoNova</h1>
+        <p>Use os comandos abaixo para interagir com o bot!</p>
+    </header>
 
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#contato">Contato</a>
-  </nav>
+    <!-- Seção de Comandos -->
+    <section id="comandos">
+        <h2>Comandos do NekoNova</h2>
+        <ul>
+            <li><strong>/help</strong> - Mostra a lista de comandos disponíveis</li>
+            <li><strong>/ping</strong> - Verifica a latência do bot</li>
+            <li><strong>/curiosidade</strong> - Mostra uma curiosidade interessante!</li>
+            <!-- Adicione mais comandos conforme necessário -->
+        </ul>
+    </section>
 
-  <section id="sobre">
-    <h2>Sobre</h2>
-    <p>O Neko Nova é uma plataforma onde os amantes do mundo Neko podem se reunir, compartilhar projetos e ideias. Seja bem-vindo à nossa comunidade!</p>
-  </section>
+    <!-- Seção de Convite para o Servidor -->
+    <section id="convite">
+        <h2>Convite para o Servidor</h2>
+        <p>Quer se juntar ao nosso servidor? Clique no link abaixo:</p>
+        <a href="https://discord.gg/seu-link-do-servidor" target="_blank" class="botao">Convite para o Discord</a>
+    </section>
 
-  <section id="projetos">
-    <h2>Projetos</h2>
-    <p>Confira os projetos mais recentes desenvolvidos por nossa equipe!</p>
-    <!-- Aqui você pode adicionar seus projetos em forma de lista ou links -->
-    <ul>
-      <li><a href="#">Projeto 1</a></li>
-      <li><a href="#">Projeto 2</a></li>
-      <li><a href="#">Projeto 3</a></li>
-    </ul>
-  </section>
-
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Se você tem alguma dúvida ou sugestão, entre em contato conosco!</p>
-    <form action="seu_script_de_envio.php" method="POST">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required><br><br>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br><br>
-
-      <label for="mensagem">Mensagem:</label><br>
-      <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
-
-      <input type="submit" value="Enviar">
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Neko Nova. Todos os direitos reservados.</p>
-  </footer>
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 NekoNova. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
