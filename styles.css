@@ -1,93 +1,84 @@
-/* Estilo geral da página */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+/* Resetando margens e padding */
+* {
     margin: 0;
     padding: 0;
-  }
-  
-  /* Cabeçalho */
-  header {
-    background-color: #ff7f50; /* Cor laranja suave */
+    box-sizing: border-box;
+}
+
+/* Definindo o estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffb6c1;
     padding: 20px;
     text-align: center;
-    color: white;
-  }
-  
-  /* Estilo do título */
-  h1 {
-    font-size: 3em;
-    margin: 0;
-  }
-  
-  /* Menu de navegação */
-  nav {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Estilo das seções */
-  section {
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+/* Seção do painel */
+.commands {
+    display: flex;
+    justify-content: space-around;
     margin: 20px;
+}
+
+/* Caixa de Comandos */
+.command-box, .invite-box {
+    background-color: #fff;
+    border-radius: 8px;
     padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Estilo do formulário */
-  form input, form textarea {
-    padding: 10px;
-    width: 100%;
-    margin: 5px 0 10px;
-    border: 1px solid #ddd;
+    width: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.command-box h2, .invite-box h2 {
+    color: #ff6f61;
+    margin-bottom: 15px;
+}
+
+/* Estilo das listas de comandos */
+.command-box ul {
+    list-style: none;
+}
+
+.command-box li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Link de convite */
+.invite-box a {
+    display: inline-block;
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
     border-radius: 5px;
-  }
-  
-  form input[type="submit"] {
-    background-color: #ff7f50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  form input[type="submit"]:hover {
-    background-color: #e7653c;
-  }
-  
-  /* Rodapé */
-  footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.invite-box a:hover {
+    background-color: #ff3b2b;
+}
+
+/* Rodapé */
+footer {
     text-align: center;
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    header h1 {
-      font-size: 2em;
-    }
-  
-    nav {
-      text-align: center;
-      padding: 15px;
-    }
-  
-    section {
-      margin: 10px;
-      padding: 15px;
-    }
-  }
-  
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #ffb6c1;
+}
+
+footer p {
+    color: #fff;
+}
